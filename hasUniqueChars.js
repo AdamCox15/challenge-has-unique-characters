@@ -50,3 +50,22 @@ for(let i = 0; i < string.length; i ==){
         uniChar = uniChar + string[i];
     }
 }*/
+
+//solution 5
+
+function uniqueChar(word) {
+
+    for (var i = 0; i < word.length-1; i++) {
+        if (word.charAt(i) == word.charAt(i + 1)) {
+            return false;
+        }
+    }
+    return true;
+}
+
+
+    if (uniqueChar("wordo") == true) {
+        console.log("String is Unique");
+    } else {
+        console.log("String is not Unique");
+    }
