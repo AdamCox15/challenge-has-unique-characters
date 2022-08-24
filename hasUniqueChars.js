@@ -11,4 +11,42 @@ for(let i = 0; i < word.length; i++){
 return true;
 }
 
-console.log(thisThing('Mann'));
+console.log(thisThing('Kieliszkowski'));
+
+//solution 2
+
+let example = 'Yes';
+
+function uniqueChar(word){
+    for(let i = 0; i < word.length; i ++){
+        if(word.indexOf(word[i]) !== word.lastIndexOf(word[i])){
+            return false;
+        }
+    }
+    return true;
+}
+
+console.log(uniqueChar(example));
+// solution 2
+let string = 'Moonday';
+let set = new set;
+
+for(let i = 0; i < string.length; i++){
+    set.add(string[i]);
+}
+
+if(set.size === string.length){
+    console.log(true);
+}else{
+    console.log(true);
+}
+//solution 4
+
+/*let uniChar = '';
+for(let i = 0; i < string.length; i ==){
+    if(uniChar.includes(string[i])){
+        return false;
+    } else{
+        uniChar = uniChar + string[i];
+    }
+}*/
